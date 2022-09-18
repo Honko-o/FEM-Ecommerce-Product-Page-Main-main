@@ -1,0 +1,14 @@
+@use '../core/variables' as *;
+.product_info {
+    .company_title {
+        color: $primary-orange;
+        letter-spacing: 2px;
+    }
+    .product_type {
+        color: $neutral-900-blue;
+        font-size: clamp(2rem, 0.5rem + 3vw, 3.5rem);
+    }
+    .product_description {
+        color: $neutral-900-gray-blue;
+    }
+}

@@ -1,0 +1,24 @@
+@use '../core/variables' as *;
+.product_price {
+    @media (max-width: 767px) {
+        justify-content: space-between;
+    }
+    .price_container {
+        width: 100%;
+        @media (max-width: 767px) {
+            width: auto;
+        }
+    }
+    // $neutral-900-blue
+    .price {
+        color: $neutral-900-blue;
+    }
+    .discount {
+        background-color: $primary-pale-orange;
+        color: $primary-orange;
+        width: 50px;
+    }
+    .original_price {
+        color: $neutral-400-gray-blue;
+    }
+}

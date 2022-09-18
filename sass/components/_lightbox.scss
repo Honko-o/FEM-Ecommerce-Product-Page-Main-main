@@ -1,0 +1,114 @@
+@use '../core/variables' as *;
+
+.lightbox,
+.product {
+    .image-preview {
+        cursor: pointer;
+        .icon-previous {
+            top: 50%;
+            transform: translateY(-50%);
+            left: 2%;
+        }
+        .icon-next {
+            top: 50%;
+            transform: translateY(-50%);
+            right: 2%;
+        }
+        .icon-previous,
+        .icon-next {
+            width: 30px;
+            height: 30px;
+        }
+    }
+    .images-thumbnails {
+        .image-container {
+            width: 20%;
+            border-radius: 1rem;
+            transition: 300ms border;
+            border: 3px solid transparentize($neutral-white, 0);
+            &[data-active='true'] {
+                border: 3px solid $primary-orange;
+            }
+            img {
+                transition: 300ms filter, 300ms opacity;
+                border-radius: 0.8rem;
+                cursor: pointer;
+                &.active {
+                    filter: opacity(0.6);
+                }
+                &:not(.active):hover {
+                    opacity: 0.6;
+                }
+            }
+        }
+    }
+    .rounded-3 {
+        border-radius: 1rem !important;
+    }
+}
+
+.product {
+    .image-preview {
+        > img {
+            @media (max-width: 768px) {
+                pointer-events: none;
+            }
+        }
+    }
+}
+
+.lightbox {
+    z-index: 1000;
+    display: none;
+    @media (max-width: 768px) {
+        display: none !important;
+    }
+    &.active {
+        display: block;
+    }
+    position: fixed;
+    width: 30%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    .image-preview {
+        button:not(:last-child) {
+            &:hover {
+                svg {
+                    * {
+                        transition: 300ms stroke;
+                        stroke: $primary-orange;
+                    }
+                }
+            }
+        }
+        button:last-child {
+            &:hover {
+                svg {
+                    * {
+                        transition: 300ms fill;
+                        fill: $primary-orange;
+                    }
+                }
+            }
+        }
+
+        cursor: pointer;
+        .icon-previous {
+            top: 50%;
+            transform: translate(-50%, -50%);
+            left: 0;
+        }
+        .icon-next {
+            top: 50%;
+            transform: translate(50%, -50%);
+            right: 0;
+        }
+        .icon-close {
+            width: 30px;
+            height: 30px;
+            top: -35px;
+            right: 0;
+        }
+    }
+}

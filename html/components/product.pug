@@ -1,0 +1,44 @@
+.product.my-5
+    .container 
+        .row
+            .col-md-5
+                .image-preview.position-relative
+                    img(class='rounded-3' src="./assets/images/image-product-1.jpg", alt="large preview of product image")
+                    button.d-flex.justify-content-center.align-items-center.border-0.position-absolute.icon-previous.bg-white.rounded-circle.d-md-none
+                        img(class='img-fluid' src="./assets/images/icon-previous.svg", alt="previous icon")
+                    button.d-flex.justify-content-center.align-items-center.border-0.position-absolute.icon-next.bg-white.rounded-circle.d-md-none
+                        img(class='img-fluid' src="./assets/images/icon-next.svg", alt="next icon")
+                .images-thumbnails.d-sm-flex.d-none.justify-content-between.my-5.rounded-3
+                    .image-container.position-relative(data-active='true' data-index=0) 
+                        img(class='active img-fluid' src="./assets/images/image-product-1-thumbnail.jpg", alt="image product one thumbnail")
+                    .image-container.position-relative(data-active='false' data-index=1)
+                        img(class='img-fluid' src="./assets/images/image-product-2-thumbnail.jpg", alt="image product two thumbnail")
+                    .image-container.position-relative(data-active='false' data-index=2)
+                        img(class='img-fluid' src="./assets/images/image-product-3-thumbnail.jpg", alt="image product three thumbnail")
+                    .image-container.position-relative(data-active='false' data-index=3)
+                        img(class='img-fluid' src="./assets/images/image-product-4-thumbnail.jpg", alt="image product four thumbnail")
+            .col-md-6.offset-md-1.align-self-center
+                .product_info 
+                    h1.mb-4.fw-bold.fs-6.text-uppercase.company_title Sneaker Company 
+                    p.product_type.lead.fw-bold.lh-1.mb-4 Fall Limited Edition Sneakers
+                    p.product_description.mb-4.fs-4.
+                        These low-profile sneakers are your perfect casual wear companion. Featuring a 
+                        durable rubber outer sole, they’ll withstand everything the weather can offer.
+                .product_price.d-flex.flex-wrap.mb-4.align-items-center
+                    .price_container.d-flex.align-items-center.mb-2
+                        span.price.fw-bold.fs-4.me-3 &#36;125.00
+                        span.discount.text-center.p-1.fw-bold.rounded-2 50%
+                    span.original_price.text-decoration-line-through.fw-bold &#36;250.00
+                .cart_controls.d-flex.flex-wrap.align-items-center.justify-content-between
+                    .amount_control.my-3.p-3.rounded-3.position-relative.text-center.d-flex.justify-content-between
+                        button.border-0.btn.remove-icon
+                            img(class='img-fluid' src="./assets/images/icon-minus.svg", alt="minus icon")
+                        button.border-0.btn.plus-icon 
+                            img(class='img-fluid' src="./assets/images/icon-plus.svg", alt="plus icon")
+                        span.product_amount.fw-bold.position-absolute 0
+                    .add_cart_button
+                        button.btn.d-flex.gap-2.justify-content-center.align-items-center.py-3.rounded-3.w-100.text-white.fw-bold
+                            svg(width='22' height='20' xmlns='http://www.w3.org/2000/svg')
+                                path(d='M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z' fill='#69707D' fill-rule='nonzero')
+                            |Add To cart
+

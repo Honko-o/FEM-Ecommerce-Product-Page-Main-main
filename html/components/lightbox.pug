@@ -1,0 +1,24 @@
+.container.lightbox-container
+    .row
+        .col-md-5
+            .lightbox
+                .image-preview.position-relative
+                    img(class='rounded-3' src="./assets/images/image-product-1.jpg", alt="large preview of product image")
+                    button.d-flex.justify-content-center.align-items-center.border-0.position-absolute.icon-previous.bg-white.rounded-circle
+                        svg(width='12', height='18', xmlns='http://www.w3.org/2000/svg')
+                            path(d='M11 1 3 9l8 8', stroke='#1D2026', stroke-width='3', fill='none', fill-rule='evenodd')
+                    button.d-flex.justify-content-center.align-items-center.border-0.position-absolute.icon-next.bg-white.rounded-circle
+                        svg(width='13', height='18', xmlns='http://www.w3.org/2000/svg')
+                            path(d='m2 1 8 8-8 8', stroke='#1D2026', stroke-width='3', fill='none', fill-rule='evenodd')
+                    button.d-flex.justify-content-center.align-items-center.border-0.position-absolute.icon-close.bg-white.rounded-circle.bg-transparent
+                        svg(width='14', height='15', xmlns='http://www.w3.org/2000/svg')
+                            path(d='m11.596.782 2.122 2.122L9.12 7.499l4.597 4.597-2.122 2.122L7 9.62l-4.595 4.597-2.122-2.122L4.878 7.5.282 2.904 2.404.782l4.595 4.596L11.596.782Z', fill='#69707D', fill-rule='evenodd')
+                .images-thumbnails.d-sm-flex.d-none.justify-content-between.my-5.rounded-3
+                    .image-container.position-relative(data-active='true' data-index=0) 
+                        img(class='active img-fluid' src="./assets/images/image-product-1-thumbnail.jpg", alt="image product one thumbnail")
+                    .image-container.position-relative(data-active='false' data-index=1)
+                        img(class='img-fluid' src="./assets/images/image-product-2-thumbnail.jpg", alt="image product two thumbnail")
+                    .image-container.position-relative(data-active='false' data-index=2)
+                        img(class='img-fluid' src="./assets/images/image-product-3-thumbnail.jpg", alt="image product three thumbnail")
+                    .image-container.position-relative(data-active='false' data-index=3)
+                        img(class='img-fluid' src="./assets/images/image-product-4-thumbnail.jpg", alt="image product four thumbnail")

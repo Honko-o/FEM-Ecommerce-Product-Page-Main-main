@@ -1,0 +1,29 @@
+@use '../core/variables' as *;
+.btn-check:focus + .btn,
+.btn:focus {
+    box-shadow: 0 0 0 0.25rem transparentize($primary-orange, 0.25);
+}
+
+@media (max-width: 576px) {
+    .product.my-5 {
+        margin: 0 !important;
+    }
+    .product {
+        .row {
+            > div:first-of-type {
+                padding: 0;
+            }
+            > div:last-of-type {
+                margin-bottom: 3rem !important;
+            }
+        }
+        .image-preview {
+            @media (max-width: 576px) {
+                margin-bottom: 3rem;
+            }
+            .rounded-3 {
+                border-radius: 0 !important;
+            }
+        }
+    }
+}

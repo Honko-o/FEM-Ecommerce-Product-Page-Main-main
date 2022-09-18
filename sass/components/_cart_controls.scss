@@ -1,0 +1,41 @@
+@use '../core/variables' as *;
+.cart_controls {
+    .amount_control {
+        width: 40%;
+        background-color: $neutral-300-gray-blue;
+        color: $neutral-900-blue;
+        @media (max-width: 767px) {
+            width: 100%;
+        }
+        .product_amount {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .remove-icon,
+        .plus-icon {
+            transition: 300ms filter;
+            &:hover {
+                filter: opacity(0.8);
+            }
+        }
+    }
+    .add_cart_button {
+        width: 50%;
+        transition: 300ms filter;
+        @media (max-width: 768px) {
+            width: 100%;
+        }
+        button {
+            background-color: $primary-orange;
+        }
+        svg {
+            * {
+                fill: white;
+            }
+        }
+        &:hover {
+            filter: opacity(0.8);
+        }
+    }
+}
