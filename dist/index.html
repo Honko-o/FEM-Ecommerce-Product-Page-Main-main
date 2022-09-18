@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../assets/images/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Frontend Mentor | E-commerce product page</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-light bg-white align-items-center position-relative">
+      <div class="container-md justify-content-lg-start justify-content-md-between">
+        <div class="logo-menu-container d-flex align-items-center"><a class="navbar-brand" href="#"><img class="img-fluid" src="./assets/images/logo.svg" alt=""></a>
+          <button class="navbar-toggler order-first" type="button" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        </div>
+        <div class="navbar-collapse">
+          <ul class="navbar-nav me-auto gap-3 pb-3 pt-3">
+            <li class="nav-item position-relative"><a class="nav-link" href="#">Collections</a></li>
+            <li class="nav-item position-relative"><a class="nav-link" href="#">Men</a></li>
+            <li class="nav-item position-relative"><a class="nav-link" href="#">Woman</a></li>
+            <li class="nav-item position-relative"><a class="nav-link" href="#">About</a></li>
+            <li class="nav-item position-relative"><a class="nav-link" href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="icons-wrapper icons-wrapper d-flex align-items-center position-relative">
+          <div class="cart-icon position-relative">
+            <button class="border-0 p-0 bg-transparent"><img class="img-fluid" src="./assets/images/icon-cart.svg" alt="cart icon"></button>
+            <div class="cart-number position-absolute rounded-pill">0</div>
+          </div>
+          <div class="avatar-img"> 
+            <button class="border-0 p-0 bg-transparent ms-4"><img class="img-fluid rounded-circle" src="./assets/images/image-avatar.png"></button>
+          </div>
+        </div>
+      </div>
+      <div class="cart_details position-absolute bg-white rounded-3">
+        <h1 class="fw-bold p-3 fs-6">Cart</h1>
+        <div class="cart_product_wrapper p-3 d-flex align-items-center justify-content-center flex-column">
+          <div class="cart_product_container"></div>
+        </div>
+      </div>
+    </nav>
+    <div class="product my-5">
+      <div class="container"> 
+        <div class="row">
+          <div class="col-md-5">
+            <div class="image-preview position-relative"><img class="rounded-3" src="./assets/images/image-product-1.jpg" alt="large preview of product image">
+              <button class="d-flex justify-content-center align-items-center border-0 position-absolute icon-previous bg-white rounded-circle d-md-none"><img class="img-fluid" src="./assets/images/icon-previous.svg" alt="previous icon"></button>
+              <button class="d-flex justify-content-center align-items-center border-0 position-absolute icon-next bg-white rounded-circle d-md-none"><img class="img-fluid" src="./assets/images/icon-next.svg" alt="next icon"></button>
+            </div>
+            <div class="images-thumbnails d-sm-flex d-none justify-content-between my-5 rounded-3">
+              <div class="image-container position-relative" data-active="true" data-index="0"> <img class="active img-fluid" src="./assets/images/image-product-1-thumbnail.jpg" alt="image product one thumbnail"></div>
+              <div class="image-container position-relative" data-active="false" data-index="1"><img class="img-fluid" src="./assets/images/image-product-2-thumbnail.jpg" alt="image product two thumbnail"></div>
+              <div class="image-container position-relative" data-active="false" data-index="2"><img class="img-fluid" src="./assets/images/image-product-3-thumbnail.jpg" alt="image product three thumbnail"></div>
+              <div class="image-container position-relative" data-active="false" data-index="3"><img class="img-fluid" src="./assets/images/image-product-4-thumbnail.jpg" alt="image product four thumbnail"></div>
+            </div>
+          </div>
+          <div class="col-md-6 offset-md-1 align-self-center">
+            <div class="product_info"> 
+              <h1 class="mb-4 fw-bold fs-6 text-uppercase company_title">Sneaker Company </h1>
+              <p class="product_type lead fw-bold lh-1 mb-4">Fall Limited Edition Sneakers</p>
+              <p class="product_description mb-4 fs-4">
+                These low-profile sneakers are your perfect casual wear companion. Featuring a 
+                durable rubber outer sole, they’ll withstand everything the weather can offer.
+              </p>
+            </div>
+            <div class="product_price d-flex flex-wrap mb-4 align-items-center">
+              <div class="price_container d-flex align-items-center mb-2"><span class="price fw-bold fs-4 me-3">&#36;125.00</span><span class="discount text-center p-1 fw-bold rounded-2">50%</span></div><span class="original_price text-decoration-line-through fw-bold">&#36;250.00</span>
+            </div>
+            <div class="cart_controls d-flex flex-wrap align-items-center justify-content-between">
+              <div class="amount_control my-3 p-3 rounded-3 position-relative text-center d-flex justify-content-between">
+                <button class="border-0 btn remove-icon"><img class="img-fluid" src="./assets/images/icon-minus.svg" alt="minus icon"></button>
+                <button class="border-0 btn plus-icon"> <img class="img-fluid" src="./assets/images/icon-plus.svg" alt="plus icon"></button><span class="product_amount fw-bold position-absolute">0</span>
+              </div>
+              <div class="add_cart_button">
+                <button class="btn d-flex gap-2 justify-content-center align-items-center py-3 rounded-3 w-100 text-white fw-bold">
+                  <svg width="22" height="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z" fill="#69707D" fill-rule="nonzero"></path>
+                  </svg>Add To cart
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container lightbox-container">
+      <div class="row">
+        <div class="col-md-5">
+          <div class="lightbox">
+            <div class="image-preview position-relative"><img class="rounded-3" src="./assets/images/image-product-1.jpg" alt="large preview of product image">
+              <button class="d-flex justify-content-center align-items-center border-0 position-absolute icon-previous bg-white rounded-circle">
+                <svg width="12" height="18" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M11 1 3 9l8 8" stroke="#1D2026" stroke-width="3" fill="none" fill-rule="evenodd"></path>
+                </svg>
+              </button>
+              <button class="d-flex justify-content-center align-items-center border-0 position-absolute icon-next bg-white rounded-circle">
+                <svg width="13" height="18" xmlns="http://www.w3.org/2000/svg">
+                  <path d="m2 1 8 8-8 8" stroke="#1D2026" stroke-width="3" fill="none" fill-rule="evenodd"></path>
+                </svg>
+              </button>
+              <button class="d-flex justify-content-center align-items-center border-0 position-absolute icon-close bg-white rounded-circle bg-transparent">
+                <svg width="14" height="15" xmlns="http://www.w3.org/2000/svg">
+                  <path d="m11.596.782 2.122 2.122L9.12 7.499l4.597 4.597-2.122 2.122L7 9.62l-4.595 4.597-2.122-2.122L4.878 7.5.282 2.904 2.404.782l4.595 4.596L11.596.782Z" fill="#69707D" fill-rule="evenodd"></path>
+                </svg>
+              </button>
+            </div>
+            <div class="images-thumbnails d-sm-flex d-none justify-content-between my-5 rounded-3">
+              <div class="image-container position-relative" data-active="true" data-index="0"> <img class="active img-fluid" src="./assets/images/image-product-1-thumbnail.jpg" alt="image product one thumbnail"></div>
+              <div class="image-container position-relative" data-active="false" data-index="1"><img class="img-fluid" src="./assets/images/image-product-2-thumbnail.jpg" alt="image product two thumbnail"></div>
+              <div class="image-container position-relative" data-active="false" data-index="2"><img class="img-fluid" src="./assets/images/image-product-3-thumbnail.jpg" alt="image product three thumbnail"></div>
+              <div class="image-container position-relative" data-active="false" data-index="3"><img class="img-fluid" src="./assets/images/image-product-4-thumbnail.jpg" alt="image product four thumbnail"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="overlay position-fixed"></div>
+    <script src="./js/all.js"> </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"> </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+  </body>
+</html>
