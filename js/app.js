@@ -57,7 +57,7 @@ navbarToggler.addEventListener('click', () => {
         menu.classList.toggle('active');
         overlay.classList.toggle('active');
         navbarTogglerIcon.style.backgroundImage =
-            'url("../assets/images/icon-close.svg")';
+            'url("./assets/images/icon-close.svg")';
     }
 });
 
