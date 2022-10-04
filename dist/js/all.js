@@ -220,10 +220,10 @@ const productImages = Array.from(
         document.querySelectorAll('.lightbox .image-container')
     ),
     IMAGES_PATH = [
-        '../assets/images/image-product-1.jpg',
-        '../assets/images/image-product-2.jpg',
-        '../assets/images/image-product-3.jpg',
-        '../assets/images/image-product-4.jpg',
+        './assets/images/image-product-1.jpg',
+        './assets/images/image-product-2.jpg',
+        './assets/images/image-product-3.jpg',
+        './assets/images/image-product-4.jpg',
     ];
 
 let productImagePreview = document.querySelector('.product .image-preview img'),
