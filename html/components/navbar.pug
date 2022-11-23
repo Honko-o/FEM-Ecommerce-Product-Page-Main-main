@@ -2,6 +2,7 @@ nav.navbar.navbar-expand-md.navbar-light.bg-white.align-items-center.position-re
   .container-md.justify-content-lg-start.justify-content-md-between
     .logo-menu-container.d-flex.align-items-center
       a.navbar-brand(href='#')
+          span.sr-only website logo 
           img(class="img-fluid" ,src="./assets/images/logo.svg", alt="")
       button.navbar-toggler.order-first(type='button'
           aria-expanded='false'
@@ -26,6 +27,6 @@ nav.navbar.navbar-expand-md.navbar-light.bg-white.align-items-center.position-re
             .cart-number.position-absolute.rounded-pill 0
         .avatar-img 
             button.border-0.p-0.bg-transparent.ms-4
-                img(class="img-fluid rounded-circle" src="./assets/images/image-avatar.png")
+                img(class="img-fluid rounded-circle" src="./assets/images/image-avatar.png" alt="user profile")
   include cart_details_box
     
