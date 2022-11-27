@@ -13,37 +13,39 @@
     <title>Frontend Mentor | E-commerce product page</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-md navbar-light bg-white align-items-center position-relative">
-      <div class="container-md justify-content-lg-start justify-content-md-between">
-        <div class="logo-menu-container d-flex align-items-center"><a class="navbar-brand" href="#"><span class="sr-only">website logo </span><img class="img-fluid" src="./assets/images/logo.svg" alt=""></a>
-          <button class="navbar-toggler order-first" type="button" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-        </div>
-        <div class="navbar-collapse">
-          <ul class="navbar-nav me-auto gap-3 pb-3 pt-3">
-            <li class="nav-item position-relative"><a class="nav-link" href="#">Collections</a></li>
-            <li class="nav-item position-relative"><a class="nav-link" href="#">Men</a></li>
-            <li class="nav-item position-relative"><a class="nav-link" href="#">Woman</a></li>
-            <li class="nav-item position-relative"><a class="nav-link" href="#">About</a></li>
-            <li class="nav-item position-relative"><a class="nav-link" href="#">Contact</a></li>
-          </ul>
-        </div>
-        <div class="icons-wrapper icons-wrapper d-flex align-items-center position-relative">
-          <div class="cart-icon position-relative">
-            <button class="border-0 p-0 bg-transparent"><img class="img-fluid" src="./assets/images/icon-cart.svg" alt="cart icon"></button>
-            <div class="cart-number position-absolute rounded-pill">0</div>
+    <header> 
+      <nav class="navbar navbar-expand-md navbar-light bg-white align-items-center position-relative">
+        <div class="container-md justify-content-lg-start justify-content-md-between">
+          <div class="logo-menu-container d-flex align-items-center"><a class="navbar-brand" href="#"><span class="sr-only">website logo </span><img class="img-fluid" src="./assets/images/logo.svg" alt=""></a>
+            <button class="navbar-toggler order-first" type="button" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
           </div>
-          <div class="avatar-img"> 
-            <button class="border-0 p-0 bg-transparent ms-4"><img class="img-fluid rounded-circle" src="./assets/images/image-avatar.png" alt="user profile"></button>
+          <div class="navbar-collapse">
+            <ul class="navbar-nav me-auto gap-3 pb-3 pt-3">
+              <li class="nav-item position-relative"><a class="nav-link" href="#">Collections</a></li>
+              <li class="nav-item position-relative"><a class="nav-link" href="#">Men</a></li>
+              <li class="nav-item position-relative"><a class="active nav-link" href="#">Woman</a></li>
+              <li class="nav-item position-relative"><a class="nav-link" href="#">About</a></li>
+              <li class="nav-item position-relative"><a class="nav-link" href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div class="icons-wrapper icons-wrapper d-flex align-items-center position-relative">
+            <div class="cart-icon position-relative">
+              <button class="border-0 p-0 bg-transparent"><img class="img-fluid" src="./assets/images/icon-cart.svg" alt="cart icon"></button>
+              <div class="cart-number position-absolute rounded-pill">0</div>
+            </div>
+            <div class="avatar-img"> 
+              <button class="border-0 p-0 bg-transparent ms-4"><img class="img-fluid rounded-circle" src="./assets/images/image-avatar.png" alt="user profile"></button>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="cart_details position-absolute bg-white rounded-3">
-        <h1 class="fw-bold p-3 fs-6">Cart</h1>
-        <div class="cart_product_wrapper p-3 d-flex align-items-center justify-content-center flex-column">
-          <div class="cart_product_container"></div>
+        <div class="cart_details position-absolute bg-white rounded-3">
+          <h1 class="fw-bold p-3 fs-6">Cart</h1>
+          <div class="cart_product_wrapper p-3 d-flex align-items-center justify-content-center flex-column">
+            <div class="cart_product_container"></div>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </header>
     <main class="product my-5">
       <div class="container"> 
         <div class="row">
